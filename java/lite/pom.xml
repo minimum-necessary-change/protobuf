@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.google.protobuf</groupId>
     <artifactId>protobuf-parent</artifactId>
-    <version>3.9.0-rc-1</version>
+    <version>3.9.1</version>
   </parent>
 
   <artifactId>protobuf-javalite</artifactId>
@@ -224,6 +224,7 @@
                     <exclude>TextFormatParseLocationTest.java</exclude>
                     <exclude>TextFormatTest.java</exclude>
                     <exclude>TestUtil.java</exclude>
+                    <exclude>TypeRegistryTest.java</exclude>
                     <exclude>UnknownEnumValueTest.java</exclude>
                     <exclude>UnknownFieldSetLiteTest.java</exclude>
                     <exclude>UnknownFieldSetTest.java</exclude>

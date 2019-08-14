@@ -1265,7 +1265,7 @@ void GenerateMessageFile(const FileDescriptor* file, const Descriptor* message,
   }
 
   printer.Print(
-      "final class ^name^ extends \\Google\\Protobuf\\Internal\\Message\n"
+      "class ^name^ extends \\Google\\Protobuf\\Internal\\Message\n"
       "{\n",
       "name", fullname);
   Indent(&printer);
@@ -1463,7 +1463,7 @@ static void GenerateDocCommentBodyForLocation(
     // HTML-escape them so that they don't accidentally close the doc comment.
     comments = EscapePhpdoc(comments);
 
-    std::vector<string> lines = Split(comments, "\n");
+    std::vector<string> lines = Split(comments, "\n", true);
     while (!lines.empty() && lines.back().empty()) {
       lines.pop_back();
     }
